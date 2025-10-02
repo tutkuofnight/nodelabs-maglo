@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "YOPQ" 300;
+}
+
+h1 {
+  @apply font-semibold text-3xl
+}
+
+p {
+  @apply text-text-3 text-base
+}
+
+a {
+  @apply text-text-1 hover:text-text-3
+}
+
+label {
+  @apply text-text-1 text-sm
+}
+
+button, .link {
+  @apply flex items-center justify-center gap-3 p-4 min-w-fit rounded-md font-medium transition-colors bg-primary text-text-1
+}
+
+button[variant="outline"], .outline {
+  @apply bg-transparent border border-gray-3 text-text-3
+}
+
+button[variant="ghost"], .ghost {
+  @apply text-text-2 hover:bg-gray-2
+}
+
+button[size="full"] {
+  @apply w-full
+}
+
+input {
+  @apply rounded-lg outline-none border border-gray-5 py-4 px-5 w-full focus-within:border-text-1 text-text-3
+}
+
+input::placeholder {
+  @apply text-text-2
+}
