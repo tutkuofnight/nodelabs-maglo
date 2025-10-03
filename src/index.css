@@ -25,8 +25,12 @@ label {
   @apply text-text-1 text-sm
 }
 
-button, .link {
-  @apply flex items-center justify-center gap-3 p-4 min-w-fit rounded-md font-medium transition-colors bg-primary text-text-1
+button {
+  @apply flex items-center justify-center gap-3 rounded-md min-w-fit
+}
+
+button[variant] {
+  @apply p-4 font-medium transition-colors bg-primary text-text-1
 }
 
 button[variant="outline"], .outline {
@@ -47,4 +51,16 @@ input {
 
 input::placeholder {
   @apply text-text-2
+}
+
+@layer utilities {
+  .border-image-wallet-glass {
+    border-image: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 100%) 1;
+  }
+  .bg-wallet-gradient {
+    background-image: linear-gradient(104.3deg, #4A4A49 2.66%, #20201F 90.57%);
+  }
+  .bg-wallet-commercial-glass {
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 100%);
+  }
 }

@@ -1,11 +1,20 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
-import svgr from '@svgr/rollup'
+import svgrRollup from '@svgr/rollup'
+import svgrPlugin from 'vite-plugin-svgr'
 
 // https://vite.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@icons': '/src/lib/icons.ts',
+    },
+  },
   plugins: [
     react(),
-    svgr()
+    // vite-plugin-svgr: SVG'leri React bileşeni olarak import etmek için
+    svgrPlugin(),
+    // rollup svgr (opsiyonel): inline/asset kullanımları için
+    svgrRollup()
   ],
 })
