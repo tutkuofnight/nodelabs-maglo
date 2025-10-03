@@ -17,4 +17,6 @@ export default defineConfig({
     // rollup svgr (opsiyonel): inline/asset kullanımları için
     svgrRollup()
   ],
+  resolve: {
+  }
 })

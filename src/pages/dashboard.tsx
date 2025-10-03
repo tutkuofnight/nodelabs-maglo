@@ -3,6 +3,8 @@ import ScheduledTransfers from "../components/scheduled-transfers";
 import { Dropdown } from "../components/ui/dropdown";
 import WalletCard from "../components/wallet-card";
 
+import WorkingCapitalChart from "../components/WorkingCapitalChart";
+
 export default function Dashboard() {
   return (
     <main className="bg-white flex flex-col gap-[30px]">
@@ -50,7 +52,7 @@ export default function Dashboard() {
         </header>
         <div className="flex gap-10">
           <section className="flex-1">
-
+            <WorkingCapitalChart />
           </section>
           <aside className="w-[354px] flex flex-col gap-[30px]">
             <div className="flex flex-col">
