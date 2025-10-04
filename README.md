@@ -4,9 +4,9 @@
 - Dynamic and Modular Components
 - Mock Datas
 - Sign Up Validation and Error Management with Zod
-- Loading Page Animations
-- Authentication Simulation
-- Base Dropdown and UI Components
+- Loading Page Animations with Motion/React
+- Authentication Simulation using Context API
+- Base Dropdown and UI Components with TailwindCSS
 - Auto Icon Components with Vite SVGR Plugin
 - Responsive Design
 - Date and Currency Formatter
