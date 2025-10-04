@@ -8,6 +8,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@icons': '/src/lib/icons.ts',
+      '@': '/src',
+      '@/': '/src/',
     },
   },
   plugins: [
@@ -17,6 +19,4 @@ export default defineConfig({
     // rollup svgr (opsiyonel): inline/asset kullanımları için
     svgrRollup()
   ],
-  resolve: {
-  }
 })

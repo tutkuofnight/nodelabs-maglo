@@ -8,11 +8,12 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-import { workingCapitalData } from "../data/mockData";
+import { workingCapitalData } from "@/data/chart-data";
+import Select from "./ui/select";
 
 export default function WorkingCapitalChart() {
   return (
-    <div className="w-full rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-4">
+    <div className="w-full rounded-lg border border-gray-3 bg-white py-[15px] px-[25px]">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-gray-900">Working Capital</h3>
         <div className="flex items-center gap-4 text-sm">
@@ -25,6 +26,20 @@ export default function WorkingCapitalChart() {
             <span className="text-gray-600">Expenses</span>
           </div>
         </div>
+        <Select name="time-period" options={[
+          {
+            value: "",
+            label: "Last 7 days"
+          },
+          {
+            value: "30days",
+            label: "Last 30 days"
+          },
+          {
+            value: "3months",
+            label: "Last 3 months"
+          },
+        ]} />
       </div>
 
       <div className="h-64">

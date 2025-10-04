@@ -27,14 +27,14 @@ export function Dropdown({ items, children }: { items: DropdownItemTypes[], chil
 
   return (
     <div className="min-w-fit relative">
-      <button className="rounded-[100px] px-[7px] py-[6px] bg-gray-1 flex items-center gap-7" onClick={toggleDropdown}>
+      <button className="rounded-[100px] px-[7px] py-[6px] bg-gray-1 flex items-center gap-3 lg:gap-7" onClick={toggleDropdown}>
         {children}
       </button>
       {isOpen && (
-        <div className="absolute rounded-[100px] bg-gray-1 top-14 left-0 w-full p-4 *:[&>button]:w-full">
+        <div className="absolute rounded-[100px] bg-gray-1 top-14 left-0 w-full p-4 *:[&>button]:w-full z-50">
           {
             items.map((item: DropdownItemTypes) => (
-              <button onClick={() => dropdownItemClick(item)}>
+              <button className="w-full text-left p-0 block text-sm font-medium" onClick={() => dropdownItemClick(item)}>
                 {item.icon}
                 {item.text}
               </button>

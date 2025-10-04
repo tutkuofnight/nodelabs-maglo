@@ -3,7 +3,10 @@
     "baseUrl": ".",
     "paths": {
       "@icons": ["src/lib/icons.ts"],
-      "@icons/*": ["src/lib/*"]
+      "@icons/*": ["src/lib/*"],
+      "@types/*": ["src/types/*"],
+      "@/*": ["src/*"],
+      "@": ["src"]
     }
   },
   "files": [],

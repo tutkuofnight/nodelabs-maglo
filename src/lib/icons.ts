@@ -1,7 +1,3 @@
-// Centralized SVG React components using SVGR
-// Usage example:
-// import { SearchIcon, NotificationIcon } from "../lib/icons"
-
 export { ReactComponent as ArrowDownIcon } from "../assets/icons/arrow-down.svg"
 export { ReactComponent as CardChipIcon } from "../assets/icons/card-chip.svg"
 export { ReactComponent as CaretDownIcon } from "../assets/icons/caret-down.svg"
@@ -23,5 +19,6 @@ export { ReactComponent as WalletAddIcon } from "../assets/icons/wallet-add.svg"
 export { ReactComponent as WalletBlackIcon } from "../assets/icons/wallet-black.svg"
 export { ReactComponent as WalletIcon } from "../assets/icons/wallet.svg"
 export { ReactComponent as WifiIcon } from "../assets/icons/wifi.svg"
-
-
+export { ReactComponent as LoadingCircle } from "../assets/icons/loader-circle.svg"
+export { ReactComponent as MenuIcon } from "../assets/icons/menu.svg"
+export { ReactComponent as XIcon } from "../assets/icons/x.svg"

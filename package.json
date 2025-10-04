@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "currency.js": "^2.0.4",
+    "dayjs": "^1.11.18",
+    "motion": "^12.23.22",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.3",
