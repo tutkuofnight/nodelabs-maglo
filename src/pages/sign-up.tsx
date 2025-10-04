@@ -76,6 +76,7 @@ export default function SignIn(){
             <h1>Create new account</h1>
             <p>Welcome back! Please enter your details</p>
           </motion.div>
+
           <motion.form 
             onSubmit={handleSubmit} 
             className="w-full flex flex-col gap-4 [&>label]:flex [&>label]:flex-col [&>label]:gap-2 [&>label]:font-medium"
@@ -139,6 +140,7 @@ export default function SignIn(){
               </button>
             </div>
           </motion.form>
+
           <motion.p 
             className="text-center mt-[25px]"
             initial={{ opacity: 0 }}
@@ -149,6 +151,7 @@ export default function SignIn(){
           </motion.p>
         </div>
       </motion.section>
+      
       <motion.section 
         className="hidden lg:block justify-self-end"
         initial={{ opacity: 0, x: 20 }}

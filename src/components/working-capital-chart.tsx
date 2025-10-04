@@ -8,7 +8,9 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
+
 import { workingCapitalData } from "@/data/chart-data";
+
 import Select from "./ui/select";
 
 export default function WorkingCapitalChart() {

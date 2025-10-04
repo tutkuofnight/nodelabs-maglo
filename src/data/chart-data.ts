@@ -1,10 +1,5 @@
 import dayjs from "dayjs";
-
-export type WorkingCapitalPoint = {
-  date: string;
-  income: number;
-  expenses: number;
-};
+import type { WorkingCapitalPoint } from "@/types";
 
 export const workingCapitalData: WorkingCapitalPoint[] = [
   { date: dayjs(new Date('2025-04-21')).format("MMM DD"), income: 4200, expenses: 5200 },

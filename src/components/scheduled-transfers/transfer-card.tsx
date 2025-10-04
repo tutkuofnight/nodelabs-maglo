@@ -1,5 +1,6 @@
 import type { TransferTypes } from "@/types"
 import { USD } from "@/lib/currency"
+import dayjs from "dayjs"
 
 export default function TransferCard({ transfer }: { transfer?: TransferTypes }) {
   return (
@@ -8,7 +9,7 @@ export default function TransferCard({ transfer }: { transfer?: TransferTypes })
         <img src={transfer?.profileImage} width={33} height={33} />
         <div className="flex flex-col text-text-1">
           <span className="font-semibold">{transfer?.fullname}</span>
-          <span className="text-text-2 text-[12px] font-medium">April 28, 2022 at 11:00</span>
+          <span className="text-text-2 text-[12px] font-medium">{dayjs(transfer?.date).format("MMMM DD, YYYY [at] HH:mm")}</span>
         </div>
       </div>
       <div className="flex items-center gap-1 *:text-black text-base font-semibold">

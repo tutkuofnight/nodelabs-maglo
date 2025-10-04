@@ -1,5 +1,5 @@
 import { XIcon } from "@icons";
-import { menuItems, bottomMenuItems } from "../data/nav"
+import { menuItems, bottomMenuItems } from "@/data/nav"
 import { useMobileMenu } from "@/context/mobile-menu-context"
 import clsx from "clsx";
 

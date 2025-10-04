@@ -34,3 +34,9 @@ export type TableDataTypes = {
   amount: number
   date: Date
 }
+
+export type WorkingCapitalPoint = {
+  date: string;
+  income: number;
+  expenses: number;
+};
