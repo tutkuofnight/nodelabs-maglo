@@ -41,6 +41,10 @@ button.ghost, .ghost {
   @apply text-text-2 hover:bg-gray-2 hover:bg-gray-3
 }
 
+button:disabled {
+  @apply cursor-default opacity-70
+}
+
 input {
   @apply rounded-lg outline-none border border-gray-5 py-4 px-5 w-full focus-within:border-text-1 text-text-3
 }

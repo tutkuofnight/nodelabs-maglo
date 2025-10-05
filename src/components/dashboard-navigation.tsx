@@ -1,10 +1,14 @@
 import { XIcon } from "@icons";
 import { menuItems, bottomMenuItems } from "@/data/nav"
 import { useMobileMenu } from "@/context/mobile-menu-context"
+import { useAuth } from "@/context/auth-context"
+
 import clsx from "clsx";
 
 export default function DashboardNavigation() {
   const { isMobileMenuOpen, closeMobileMenu } = useMobileMenu()
+  const { logout } = useAuth()
+
   return (
     <div className={clsx("hidden xl:block fixed left-0 top-0 z-10", isMobileMenuOpen && "!block")}>
       <nav className="w-[250px] h-screen bg-gray-1 py-[30px] px-[25px] flex flex-col gap-10">
@@ -26,7 +30,7 @@ export default function DashboardNavigation() {
         </ul>
         <div className="flex flex-col gap-[2px]">
           {bottomMenuItems.map((item) => (
-            <a href={item.url} className="nav-link">
+            <a href={item.url} className="nav-link" onClick={() => item.name == "Logout" && logout()}>
               {item.icon && <item.icon />}
               {item.name}
             </a>

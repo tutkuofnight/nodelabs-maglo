@@ -124,7 +124,7 @@ export default function SignIn(){
               )}
             </label>
             <div className="flex flex-col gap-4 mt-[11px] [&>button]:font-semibold">
-              <button type="submit" className="button primary">
+              <button type="submit" className="button primary" disabled={isLoading}>
                 {isLoading && Object.keys(errors).length === 0 ? (
                   <div className="flex items-center gap-4">
                     <div className="animate-spin">
